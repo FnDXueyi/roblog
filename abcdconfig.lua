@@ -35,14 +35,14 @@ getgenv().ConfigsKaitun = {
 			"Princess Thorn",
 			-- for the event
 			Bamboo = 4,
-			Coconut = 4,
+			Coconut = 15,
 			Mushroom = 4,
 			Glowthorn = 4,
-			Tomato = 4,
+			Tomato = 15,
 			Pumpkin = 4,
 			Pepper = 4,
-			Cacao = 4,
-			Apple = 4,
+			Cacao = 15,
+			Apple = 15,
 			Romanesco = 4,
 			["Elder Strawberry"] = 4,
 			["Burning Bud"] = 4,
@@ -50,14 +50,14 @@ getgenv().ConfigsKaitun = {
 			Corn = 4,
 			["Sugar Apple"] = 4,
 			["Ember Lily"] = 4,
-			["Dragon Fruit"] = 4,
-			Sunbulb = 4,
+			["Dragon Fruit"] = 15,
+			Sunbulb = 8,
 			["Orange Tulip"] = 4,
-			Blueberry = 4,
+			Blueberry = 15,
 			Watermelon = 4,
-			Mango = 4,
+			Mango = 15,
 			Cactus = 4,
-			Strawberry = 4,
+			Strawberry = 15,
 			Beanstalk = 4,
 			Lightshoot = 4,
 			Grape = 4,
@@ -96,6 +96,9 @@ getgenv().ConfigsKaitun = {
 	},
 	
 	Events = {
+		["Fall Event"] = {
+			Minimum_Money = 10_000_000, -- minimum money to start play this event
+		},
 		["Fairy Event"] = {
 			Minimum_Money = 10_000_000, -- minimum money to start play this event
 			Rewards_Item = { -- top mean select first
@@ -126,6 +129,8 @@ getgenv().ConfigsKaitun = {
 		},
 		MaxMoney_Restocks = 10_000_000,
 		Shop = {
+			"Fall Egg",
+
 			"Enchanted Chest",
 			"Pet Shard Glimmering",
 			"Enchanted Egg",
@@ -188,6 +193,7 @@ getgenv().ConfigsKaitun = {
 			"Rare Summer Egg",
 			"Common Summer Egg",
 			"Enchanted Egg",
+			"Fall Egg",
 			"Sprout Egg",
 			"Gourmet Egg",
 			"Zen Egg",
@@ -221,23 +227,25 @@ getgenv().ConfigsKaitun = {
 		},
         ["Start Delete Pet At"] = 50,
 		["Upgrade Slot"] = {
+			["Little Auto Equip"] = true,
 			["Pet"] = {
                 ["Starfish"] = { 8, 75, 1, true },
 				["Squirrel"] = { 8, 75, 2, true },
 			},
 			["Limit Upgrade"] = 5,
 			["Equip When Done"] = {
-				["Glimmering Sprite"] = { 8, 100, 1 },
-                ["Starfish"] = { 8, 75, 2 },
-				["Squirrel"] = { 8, 75, 3 },
-				["Seal"] = { 8, 100, 4 },
-				["Ostrich"] = { 8, 100, 5 },
+				-- ["Glimmering Sprite"] = { 8, 100, 1 },
+                ["Starfish"] = { 8, 75, 1 },
+				["Squirrel"] = { 8, 75, 2 },
+				["Seal"] = { 8, 100, 3 },
+				["Ostrich"] = { 8, 100, 4 },
 			},
 		},
 		Unfavorite_AllPet = false,
 		Favorite_LockedPet = false,
 		Locked_Pet_Age = 70,
 		Locked = {
+			"Swan",
 			"Phoenix",
 			"Cockatrice",
 			"Griffin",
@@ -262,7 +270,6 @@ getgenv().ConfigsKaitun = {
 			"Mimic Octopus",
 			"Red Fox",
             "Moon Cat",
-			["Glimmering Sprite"] = 8,
 			["Ostrich"] = 8,
 			["Orangutan"] = 8,
 			["Koi"] = 8,
