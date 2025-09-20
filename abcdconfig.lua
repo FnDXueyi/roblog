@@ -130,6 +130,7 @@ getgenv().ConfigsKaitun = {
 		MaxMoney_Restocks = 10_000_000,
 		Shop = {
 			"Fall Egg",
+			"Red Panda",
 
 			"Enchanted Chest",
 			"Pet Shard Glimmering",
