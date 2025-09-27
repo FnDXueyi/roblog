@@ -20,6 +20,13 @@ getgenv().ConfigsKaitun = {
 			
 		}
 	},
+	Ascend = {
+		Enabled = false,
+		Max_Rebirth_Money = 1_000_000_000_000,
+		Shop = {
+			"Egg Capacity"
+		}
+	},
 	["Limit Tree"] = {
 		["Limit"] = 400,
 		["Destroy Untill"] = 400,
@@ -96,76 +103,29 @@ getgenv().ConfigsKaitun = {
 	},
 	
 	Events = {
-		["Fall Event"] = {
-			Minimum_Money = 10_000_000, -- minimum money to start play this event
-		},
-		["Fairy Event"] = {
-			Minimum_Money = 10_000_000, -- minimum money to start play this event
-			Rewards_Item = { -- top mean select first
-				"Enchanted Seed Pack",
-				"Pet Shard Glimmering",
-				"Enchanted Egg",
-				"Mutation Spray Glimmering",
-				"FairyPoints",
-				"Fairy Targeter",
-			},
-			Upgrade = {
-				Mode = "Order", -- Order (mean will up on order), Chepest, Highest
-				Order = { -- top upgrade first, not put mean not upgrade
-					"Fairy Spawn Amount",
-					"Loose Fairy Spawn Amount",
-					"Glimmer Multiplier",
-					"Fairy Event Duration",
-				},
-				Limit = {
-					["Glimmer Multiplier"] = 5, -- max 10
-					["Loose Fairy Spawn Amount"] = 10, -- max 10
-					["Fairy Event Duration"] = 10, -- max 10
-					["Fairy Spawn Amount"] = 9, -- max 9
-				}
-			},
-			
-			Catch_Fairy_Before_Restock = 51, -- fr it 50 but to be sure i put 51
-		},
-		MaxMoney_Restocks = 10_000_000,
-		Shop = {
-			"Fall Egg",
-			"Red Panda",
-
-			"Enchanted Chest",
-			"Pet Shard Glimmering",
-			"Enchanted Egg",
-			"Enchanted Seed Pack",
-			-- "Drake",
-			"Pixie Faern",
-			"Untold Bell",
-			"Luminous Sprite",
-			"Mutation Spray Luminous",
-			"Luminous Wand",
-			
-			-- "Sprout Egg",
-			-- "Skyroot Chest",
-			-- "Pet Shard GiantBean",
-			-- "Sprout Seed Pack",
-			-- "Silver Fertilizer",
-			-- ["Spriggan"] = 8,
+		-- MaxMoney_Restocks = 10_000_000,
+		
+		Shop = { -- un comment to buy
+			"Evo Beetroot I",
+			"Evo Blueberry I",
+			"Evo Pumpkin I",
+			"Evo Mushroom I",
 		},
 		["Traveling Shop"] = {
 			"Bee Egg",
-			"Common Summer Egg",
-			"Rare Summer Egg",
-			"Paradise Egg",
+			"Paradise Egg", 
+			"Rare Summer Egg", 
+			"Common Summer Egg"
 		},
 		Craft = {
 			"Enchanted Chest",
-			"Fairy Net",
 			"Enchanted Egg",
 			"Enchanted Seed Pack",
 			"Anti Bee Egg",
 			"Pet Shard GiantBean",
 			"Sprout Egg",
 		},
-		Start_Do_Honey = 2_000_000
+		Start_Do_Honey = 2_000_000 -- start trade fruit for honey at money
 	},
 
 	Gear = {
@@ -195,6 +155,7 @@ getgenv().ConfigsKaitun = {
 			"Common Summer Egg",
 			"Enchanted Egg",
 			"Fall Egg",
+			"Jungle Egg",
 			"Sprout Egg",
 			"Gourmet Egg",
 			"Zen Egg",
@@ -246,6 +207,7 @@ getgenv().ConfigsKaitun = {
 		Favorite_LockedPet = false,
 		Locked_Pet_Age = 70,
 		Locked = {
+			"Tiger",
 			"Swan",
 			"Phoenix",
 			"Cockatrice",
@@ -317,7 +279,7 @@ getgenv().ConfigsKaitun = {
 				"Red Fox",
 				"Mimic Octopus",
 			},
-			Pet_Weight_Noti = true,
+			Pet_Weight_Noti = false,
 		}
 	},
 }
