@@ -140,11 +140,11 @@ getgenv().ConfigsKaitun = {
 
 	Eggs = {
 		Place = {
-			"Rare Summer Egg",
-			"Common Summer Egg",
-			"Paradise Egg",
-			"Bug Egg",
-			"Mythical Egg",
+			-- "Rare Summer Egg",
+			-- "Common Summer Egg",
+			-- "Paradise Egg",
+			-- "Bug Egg",
+			-- "Mythical Egg",
 			-- "Enchanted Egg",
 			-- "Fall Egg",
 			-- "Jungle Egg",
@@ -185,7 +185,7 @@ getgenv().ConfigsKaitun = {
 			},
 			["Limit Upgrade"] = 5,
 			["Equip When Done"] = {
-				-- ["Glimmering Sprite"] = { 8, 100, 1 },
+				["Chubby Chipmunk"] = {8, 100, 1},
                 ["Starfish"] = { 8, 75, 1 },
 				["Squirrel"] = { 8, 75, 2 },
 				["Seal"] = { 8, 100, 3 },
@@ -196,6 +196,8 @@ getgenv().ConfigsKaitun = {
 		Favorite_LockedPet = false,
 		Locked_Pet_Age = 70,
 		Locked = {
+			"Chinchilla",
+			["Chubby Chipmunk"] = 8,
 			"Tiger",
 			"Swan",
 			"Phoenix",
